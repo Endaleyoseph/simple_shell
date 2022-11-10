@@ -22,11 +22,14 @@ int _execute(char **arg)
 		{
 			perror("./shell");
 		}
+		exit(EXIT_FAILURE);
 	}
 
 	else
 	{
-		wait(&status);
+		do {
+			waitpid(pid, &status, WUNTRACED);
+		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
 	}
 
 	return (1);
