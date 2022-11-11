@@ -16,7 +16,7 @@ int main(void)
 		printf("#Myshell$ ");
 		str = read_line();
 		arg = _strtok(str);
-		_execute(arg);
+		get_fun(arg);
 	} while (1);
 	printf("\n");
 
