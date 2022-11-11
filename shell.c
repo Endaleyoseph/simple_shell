@@ -11,14 +11,13 @@ int main(void)
 {
 	char *str;
 	char **arg;
-	int val;
 
 	do {
 		printf("#Myshell$ ");
 		str = read_line();
 		arg = _strtok(str);
-		val = _execute(arg);
-	} while (val);
+		get_fun(arg);
+	} while (1);
 	printf("\n");
 
 	return (0);
