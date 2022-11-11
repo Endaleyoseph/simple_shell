@@ -27,6 +27,7 @@ typedef struct cmp
 char **_strtok(char *av);
 char *read_line(void);
 int get_fun(char **arg);
+int _cat(char **arg);
 int _lst(char **arg);
 int _execute(char **arg);
 int exit_t(char **arg);
