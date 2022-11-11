@@ -11,6 +11,7 @@ int get_fun(char **arg)
 	cmp_t ch[] = {
 		{"ls", _lst},
 		{"exit", exit_t},
+		{"env", _env},
 		{NULL, NULL}
 	};
 	int i = 0;

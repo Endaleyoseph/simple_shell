@@ -9,6 +9,8 @@
 #include <sys/wait.h>
 #include <sys/stat.h>
 #include <stddef.h>
+extern char **environ;
+
 
 /**
  * struct cmp - structure containing two elements
@@ -28,5 +30,6 @@ int get_fun(char **arg);
 int _lst(char **arg);
 int _execute(char **arg);
 int exit_t(char **arg);
+int _env(char **arg);
 
 #endif
