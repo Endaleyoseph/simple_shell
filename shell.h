@@ -24,6 +24,7 @@ typedef struct cmp
 	char *str;
 	int (*fun)(char **);
 } cmp_t;
+void free_arg(char **arg);
 char **_strtok(char *av);
 char *read_line(void);
 int get_fun(char **arg);

@@ -16,6 +16,7 @@ int _lst(char **arg)
 		s[i] = arg[i];
 		i++;
 	}
+	arg = NULL;
 
 	return (_execute(s));
 }

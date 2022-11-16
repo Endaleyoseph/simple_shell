@@ -8,7 +8,8 @@
 
 int exit_t(char **arg)
 {
-	(void)arg;
+	free_arg(arg);
+	arg = NULL;
 	exit(EXIT_SUCCESS);
 
 	return (0);

@@ -17,7 +17,7 @@ int main(void)
 		str = read_line();
 		arg = _strtok(str);
 		get_fun(arg);
-		free(arg);
+		free_arg(arg);
 	} while (1);
 	printf("\n");
 
