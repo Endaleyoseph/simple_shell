@@ -14,13 +14,13 @@ int _execute(char **arg)
 
 	pid = fork();
 	if (pid < 0)
-		perror(arg[0]);
+		perror("./shell");
 
 	if (pid == 0)
 	{
-		if (execve(arg[0], arg, NULL) == -1)
+		if (execve(arg[0], arg, environ) == -1)
 		{
-			perror(arg[0]);
+			perror("./shell");
 		}
 		exit(EXIT_FAILURE);
 	}

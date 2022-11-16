@@ -13,7 +13,7 @@ int main(void)
 	char **arg;
 
 	do {
-		printf("#Myshell$ ");
+		printf("#cisfun$ ");
 		str = read_line();
 		arg = _strtok(str);
 		get_fun(arg);
