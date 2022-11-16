@@ -18,16 +18,9 @@ int _execute(char **arg)
 
 	if (pid == 0)
 	{
-		if (arg[1] == NULL)
+		if (execve(arg[0], arg, environ) == -1)
 		{
-			if (execve(arg[0], arg, environ) == -1)
-			{
-				perror("./shell");
-			}
-		}
-		else
-		{
-			fprintf(stderr, "./shell: No such file or directory\n");
+			perror("./shell");
 		}
 		exit(EXIT_FAILURE);
 	}
