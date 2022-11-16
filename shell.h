@@ -21,8 +21,8 @@ extern char **environ;
 
 typedef struct cmp
 {
-        char *str;
-        int (*fun)(char **);
+	char *str;
+	int (*fun)(char **);
 } cmp_t;
 char **_strtok(char *av);
 char *read_line(void);
