@@ -3,7 +3,7 @@
 /**
  * free_arg - frees argument
  * @arg: argument
- * 
+ *
  */
 
 void free_arg(char **arg)

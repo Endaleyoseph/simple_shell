@@ -16,6 +16,7 @@ int get_fun(char **arg)
 		{NULL, NULL}
 	};
 	int i = 0;
+
 	while (ch[i].str != NULL)
 	{
 		if ((strcmp(ch[i].str, arg[0])) == 0)
