@@ -62,6 +62,7 @@ char **_strtok(char *av)
 		token1 = strtok(NULL, " \n");
 	}
 	save[i] = NULL;
+	i++;
 	save = check_buffer(save, buf_size, i);
 	return (save);
 }

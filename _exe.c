@@ -22,7 +22,6 @@ int _execute(char **arg)
 		{
 			perror(arg[0]);
 		}
-		free_arg(arg);
 		exit(EXIT_FAILURE);
 	}
 
