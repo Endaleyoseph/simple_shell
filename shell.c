@@ -3,12 +3,16 @@
 
 /**
  * main - Entry point
- *
+ * @ac: number of args
+ * @av: arument entered by usr
  * Return: 0 on success
  */
 
-int main(void)
+int main(int ac, char *av[])
 {
+	(void)ac;
+	(void)av;
+
 	char *str;
 	char **arg;
 
