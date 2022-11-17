@@ -31,6 +31,7 @@ int _execute(char **arg)
 		do {
 			waitpid(pid, &status, WUNTRACED);
 		} while (!WIFEXITED(status) && !WIFSIGNALED(status));
+		free_arg(arg);
 	}
 
 	return (1);
