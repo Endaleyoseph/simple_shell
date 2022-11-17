@@ -10,7 +10,7 @@ int get_fun(char **arg)
 {
 	cmp_t ch[] = {
 		{"ls", _lst},
-		{"exit", exit_t},
+		{"exit1", exit_t},
 		{"env", _env},
 		{"cat", _cat},
 		{NULL, NULL}
