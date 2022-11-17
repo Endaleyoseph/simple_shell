@@ -22,6 +22,7 @@ int _execute(char **arg)
 		{
 			perror("./shell");
 		}
+		free_arg(arg);
 		exit(EXIT_FAILURE);
 	}
 

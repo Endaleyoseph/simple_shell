@@ -15,7 +15,8 @@ char *read_line(void)
 	{
 		if (feof(stdin))
 		{
-			printf("exit\n");
+			if (isatty(STDIN_FILENO))
+				printf("exit\n");
 			free(str);
 			exit(EXIT_SUCCESS);
 		}

@@ -13,12 +13,12 @@ int main(void)
 	char **arg;
 
 	do {
-		printf("#cisfun$ ");
+		if (isatty(STDIN_FILENO))
+			printf("#cisfun$ ");
 		str = read_line();
 		arg = _strtok(str);
 		get_fun(arg);
 	} while (1);
-	free_arg(arg);
 	printf("\n");
 
 	return (0);
