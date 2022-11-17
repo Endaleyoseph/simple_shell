@@ -10,11 +10,11 @@
 
 int main(int ac, char *av[])
 {
-	(void)ac;
-	(void)av;
-
 	char *str;
 	char **arg;
+
+	(void)ac;
+	(void)av;
 
 	do {
 		if (isatty(STDIN_FILENO))
