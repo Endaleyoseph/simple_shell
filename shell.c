@@ -18,7 +18,7 @@ int main(int ac, char *av[])
 
 	do {
 		if (isatty(STDIN_FILENO))
-			printf("#cisfun$ ");
+			write(STDOUT_FILENO, "#cisfun$ ", 9);
 		str = read_line();
 		arg = _strtok(str);
 		get_fun(arg);
